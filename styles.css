@@ -1,7 +1,18 @@
-.main-container{
+@font-face {
+    font-family: NorseBold;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
+:root{
+    font-family: 'NorseBold','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0px;
+}
+.main-container {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-column-gap: 2px;
+    
     background-color: black;
     height: 100vh;
     margin: 0px;
@@ -11,14 +22,45 @@
     background-color: aqua;
     margin: 0px;
 }
+
+.side-logo{
+    background-image: url("/home/user/gitscript/Sign-up-Form/img/afri-back2.jpg"); 
+    background-size: cover;
+}
 .main-body{
     display:grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 30% 40% 30%;
     grid-row-gap: 2px;
     
 
 }
 .main-body > div {
     background-color: rgb(192, 25, 81);
-    text-align: center;
+   /* text-align: center; */
+   padding-left: 15px;
+}
+
+.main-para>p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.main-para{
+    
+    justify-content: center;
+}
+.main-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 2px;
+}
+input{
+    border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main-form>div{
+    background-color: blueviolet;
 }
