@@ -11,3 +11,14 @@
     background-color: aqua;
     margin: 0px;
 }
+.main-body{
+    display:grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 2px;
+    
+
+}
+.main-body > div {
+    background-color: rgb(192, 25, 81);
+    text-align: center;
+}
