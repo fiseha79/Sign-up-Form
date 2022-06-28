@@ -1,0 +1,13 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-column-gap: 2px;
+    background-color: black;
+    height: 100vh;
+    margin: 0px;
+}
+
+.main-container > div{
+    background-color: aqua;
+    margin: 0px;
+}
