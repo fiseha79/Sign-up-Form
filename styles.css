@@ -4,7 +4,7 @@
 }
 
 :root{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'sans-serif' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
     margin: 0px;
@@ -103,13 +103,12 @@ input {
     width: 75%;
 }
 input:focus{
-    border-color: green;
+   
+    box-shadow: 2px 2px green;
+    border-color: red;
    
 }
-input:hover{
-    border-color: red;
-    box-shadow:inset;
-}
+
 .main-form>div{
     background-color: white;
 }
@@ -128,6 +127,9 @@ input:hover{
     color: white;
     font-weight: bold;
     
+}
+.btn > button:hover{
+ cursor: pointer;
 }
 .btn{
     padding-top: 20px;
