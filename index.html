@@ -10,42 +10,79 @@
 <body>
     <div class="main-container">
         <div class="side-logo">
-        1
+        <div class="logo">
+        <div class="art-logo">
+            <img src="img/pngwing.com.png" >
+        </div>
+        <div class="logo-say">
+         <h1>African Beauty</h1>
+            </div>
+            </div>
         </div>
         <div class="main-body">
         <div class="main-para">
+        </br>
+        </br>
+        </br>
             <p>This is not a real online service! You know need something<br> like this in your life to help you realize your deepest dreams.<br> Sign up now to get started.<br>
                 <br>You <en>know</en> you want to.</p>
 
         </div>
         <div class="main-form">
           
-            <div>
+            <div class="form">
                 <h2>Let's Do This!</h2>
             <form>
+                <div class="form-container">
+                <div>
                 <label for="first-name">FIRST NAME</label></br>
                 <input type="text" name="first-name" id="first-name" /></br> </br>
                 <label for="email">EMAIL</label></br>
                 <input type="email" name="email" id="email" /></br> </br>
                 <label for="password">PASSWORD</label></br>
                 <input type="password" name="password" id="password" />
-            </form></div>
+            </div>
             <div>
-            <form>
-            </br></br></br></br>
+            
+            
                 <label for="last-name">LAST NAME</label></br>
                 <input type="text" name="last-name" id="last-name" /></br> </br>
                 <label for="phone-num">PHONE NUMBER</label></br>
                 <input type="text" name="phone-num" id="phone-num" /></br> </br>
                 <label for="confirm">CONFIRM PASSWORD</label></br>
                 <input type="password" name="confirm" id="confirm" />
-            </form></div>
+            </br>
+            <div class="error">
+
+            </div>
+        </br>
+            </div>
+        </div>
+        </form>
+        </div>
         </div>
         <div class="main-btn">
-            4
+            <div class="btn">
+            <button type="submit" value="submit" onclick="return onChange()">Create Account</button>
+            </br>
+        </br>
+            <h3>Already have an account?<a href="#"> Log in</a></h3>
+            </div>
         </div>
         </div>
     </div>
-    
+ <script type="text/javascript">
+
+function onChange() {
+    const password = document.querySelector('input[name=password]');
+    const confirm = document.querySelector('input[name=confirm]');
+    if (confirm.value === password.value) {
+
+       document.getElementsByClassName("error").innerHTML = "Password Match"; 
+    } else {
+        document.getElementsByClassName("error").innerHTML = "Passwords do not match";
+    }
+  }
+ </script>   
 </body>
 </html>

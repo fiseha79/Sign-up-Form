@@ -4,28 +4,58 @@
 }
 
 :root{
-    font-family: 'NorseBold','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
     margin: 0px;
 }
 .main-container {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     
     background-color: black;
-    height: 100vh;
+    height: 120vh;
     margin: 0px;
 }
 
 .main-container > div{
-    background-color: aqua;
+    background-color: white;
     margin: 0px;
 }
 
 .side-logo{
     background-image: url("/home/user/gitscript/Sign-up-Form/img/afri-back2.jpg"); 
     background-size: cover;
+    font-family: 'NorseBold','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+    
+
+.logo{
+   display: grid;
+   grid-template-columns: 45% 55%;
+   background-color:#21222183;
+  
+   width: 100%;
+   margin-top: 80vh;
+}
+.art-logo{
+    width:100%;
+    height:100%;
+    
+}
+
+.art-logo img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+.logo-say{
+    text-align:center;
+    color:white;
+    
 }
 .main-body{
     display:grid;
@@ -35,9 +65,10 @@ body{
 
 }
 .main-body > div {
-    background-color: rgb(192, 25, 81);
+   /* background-color: rgb(192, 25, 81);*/
    /* text-align: center; */
    padding-left: 15px;
+   font-size:12px;
 }
 
 .main-para>p {
@@ -50,17 +81,54 @@ body{
     
     justify-content: center;
 }
-.main-form{
+
+
+.form-container{
+
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
     grid-column-gap: 2px;
 }
-input{
-    border: 2px solid #000;
-  margin-bottom: 15px;
-  padding: 5px;
-  border-radius: 5px;
+.form{
+    padding-left: 10px;
+}
+input {
+    border: 1px solid #E5E7EB;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 75%;
+}
+input:focus{
+    border-color: green;
+   
+}
+input:hover{
+    border-color: red;
+    box-shadow:inset;
 }
 .main-form>div{
-    background-color: blueviolet;
+    background-color: white;
+}
+
+.btn > button{
+    
+    width: 200px;
+    height:3rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    
+}
+.btn{
+    padding-top: 20px;
+    padding-left: 10px;
+    
+    
+}
+a:link{
+  color:#596D48;
 }
